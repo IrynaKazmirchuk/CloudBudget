@@ -1,0 +1,22 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 767px;
+$mobile: 576px;
+
+$footer-height: 500px;
+
+$white: #fff;
+$black: #000;
+$ff: 'Lato', sans-serif;
+$transition: .2s all ease-in-out;
+$c--primary: #ED4C5C;
+$c--text: #fff;
+$c--textDark:#101010;
+$c--border: #eee;
+$c--bg: #FAFAFA;
+
+// = width of general container/ for adaptive fonts (@mixin adaptiv-font($pcSize, $mobSize)) 
+$maxWidth: 1150;
+
+

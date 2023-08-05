@@ -1,0 +1,61 @@
+.technology-block {
+  &__title {
+    text-align: center;
+    margin-bottom: 52rem;
+  }
+  &__container {
+    padding: 63rem 20rem 108rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(255rem, 1fr));
+    gap: 30rem;
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.list-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__counter {
+    color: rgba(16, 16, 16, 0.08);
+    text-align: center;
+    font-size: 100rem;
+    font-weight: 700;
+    margin-bottom: 19rem;
+  }
+  &__image {
+    margin-top: -77rem;
+    &._secure {
+      margin-top: -72rem;
+      margin-bottom: 9rem;
+    }
+    &._pdf {
+      margin-bottom: 9rem;
+    }
+    &._csv {
+      margin-top: -66rem;
+      margin-bottom: 14rem;
+    }
+  }
+
+  &__title {
+    color: $c--textDark;
+    text-align: center;
+    font-size: 18rem;
+    font-weight: 700;
+    margin-bottom: 10rem;
+  }
+
+  &__desc {
+    color: $black;
+    text-align: center;
+    font-size: 12rem;
+    font-weight: 400;
+    max-width: 191rem;
+  }
+}

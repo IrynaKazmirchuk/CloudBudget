@@ -1,0 +1,22 @@
+// vendors
+@import "vendors/reset";
+
+// utils
+@import "utils/fonts";
+@import "utils/vars";
+@import "utils/mixins";
+
+// layout
+@import "layout/base";
+@import "layout/scroll";
+
+// components
+@import "components/common";
+@import "components/header";
+@import "components/main-block";
+@import "components/management-block";
+@import "components/features-block";
+@import "components/technology-block";
+@import "components/money-block";
+@import "components/contact-block";
+@import "components/footer";

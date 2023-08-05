@@ -1,0 +1,86 @@
+.footer {
+  background: $c--bg;
+  &__container {
+    padding: 85rem 20rem;
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(216rem, 1fr));
+    gap: 61rem;
+    margin-bottom: 86rem;
+  }
+  &__title {
+    color: $c--textDark;
+    font-size: 18rem;
+    font-weight: 700;
+    margin-bottom: 33rem;
+  }
+  &__value {
+    color: $c--textDark;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 175rem;
+    transition: $transition;
+    & a {
+      &:hover {
+        color: darken($c--primary, 20%);
+      }
+    }
+  }
+
+  &__a {
+    color: $black;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+    transition: $transition;
+    &:hover {
+      color: darken($c--primary, 20%);
+    }
+  }
+  &__data-value {
+    color: $c--textDark;
+    font-size: 12rem;
+    font-weight: 400;
+    margin-bottom: 11rem;
+    transition: $transition;
+    & a {
+      &:hover {
+        color: darken($c--primary, 20%);
+      }
+    }
+  }
+  &__tel-value {
+    color: #121212;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20rem;
+    transition: $transition;
+    & a {
+      &:hover {
+        color: darken($c--primary, 20%);
+      }
+    }
+    
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 12rem;
+    transition: $transition;
+    & a {
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+  &__copy {
+    color: $c--textDark;
+    font-family: Lato;
+    font-size: 12rem;
+    font-weight: 400;
+
+  }
+}

@@ -1,0 +1,59 @@
+.title {
+  color: $black;
+  font-size: 36rem;
+  font-weight: 600;
+  @include adaptiv-font(36, 24);
+  @media screen and (min-width: 1150px) {
+    font-size: 36rem;
+  }
+}
+
+.desc {
+  color: $black;
+  font-size: 14rem;
+  font-weight: 400;
+  line-height: 140%;
+}
+.btn {
+  font-family: Lato;
+  font-size: 14rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 11rem 29rem;
+  border-radius: 6px;
+  outline: 0;
+  display: block;
+  cursor: pointer;
+
+  &._primary {
+    color: $white;
+    border: 1px solid $white;
+    background: transparent;
+    &:hover {
+      color: darken($c--primary, 10%);
+      background: $white;
+      scale: 0.9;
+    }
+  }
+  &._main {
+    color: #ed4c5c;
+    padding: 17rem 53rem;
+    background: $white;
+    border: 1px solid $white;
+    &:hover {
+      scale: 0.9;
+    }
+  }
+  &._form {
+    display: inline-flex;
+    max-width: 160rem;
+    padding: 17rem 34rem;
+    background: $c--primary;
+    color: $white;
+    transition: $transition;
+    &:hover {
+      background: darken($c--primary, 10%);
+      scale: 0.9;
+    }
+  }
+}
