@@ -1,10 +1,11 @@
 // ===== SCROLL CUSTOMIZE =====
 *::-webkit-scrollbar {
-  width: 10px;
+  width: 14px;
   height: 10px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(112, 5, 5, 0);
 }
 * ::-webkit-scrollbar-thumb {
+  border: 3px solid $white;
   border-radius: 5px;
-  background-color: #d1d1d1;
+  background-color: darken($c--primary, 15%);
 }

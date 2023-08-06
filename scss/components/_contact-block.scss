@@ -25,6 +25,9 @@
     display: flex;
     justify-content: center;
     gap: 30rem;
+    @include tablet {
+      gap: 24rem;
+    }
     @include mobile {
       flex-direction: column;
     }
@@ -54,39 +57,36 @@
   }
 }
 
-.form-select {
-  position: relative;
-  max-width: 540px;
-  height: 60px;
+.select {
+  width: 100%;
+  padding: 20rem 55rem 20rem 31rem;
   border-radius: 6rem;
-  border: 0;
-  @include mobile {
-    max-width: 280rem;
-  }
-}
-
-.label {
-  max-width: 540px;
-  height: 60rem;
-  padding: 20rem 31rem;
-  position: absolute;
-  pointer-events: none;
+  border: 1px solid #333;
   color: rgba(19, 39, 67, 0.5);
   font-size: 16rem;
   font-weight: 400;
-  top: 0px;
-  transition: $transition;
+  appearance: none;
+  &__services {
+    background-color: rgba(213, 32, 71, 0.5);
+    color: $c--textDark;
+    font-weight: 600;
+  }
   @include mobile {
     max-width: 280rem;
   }
 }
-.select {
+.form-option {
+  color: $c--textDark;
+  background-color: rgba(213, 32, 71, 0.5);
+}
+.select-group {
+  position: relative;
+}
+.material-symbols-rounded {
   position: absolute;
-  width: 540px;
-  height: 60px;
-  border-radius: 6rem;
-  border: 1px solid #333;
-  @include mobile {
-    max-width: 280rem;
-  }
+  pointer-events: none;
+  top: 50%;
+  right: 12rem;
+  transform: translate(-50%, -50%);
+  color: rgba(19, 39, 67, 0.5);
 }

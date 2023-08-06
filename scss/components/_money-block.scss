@@ -48,15 +48,18 @@
       }
     }
   }
-  &__video,
-  img {
-    border-radius: 10rem;
-    transition: $transition;
-    &:hover {
-      scale: 0.95;
-    }
-    @include tablet {
-      min-width: 100%;
+  &__video {
+    & a {
+      & img {
+        border-radius: 10rem;
+        transition: $transition;
+        &:hover {
+          scale: 0.95;
+        }
+        @include tablet {
+          min-width: 100%;
+        }
+      }
     }
   }
 }

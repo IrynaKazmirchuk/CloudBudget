@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>CloudBudget</title>
   </head>
@@ -98,18 +102,13 @@
                 class="management-block__img"
               />
             </a>
-            <div
-              class="management-block__video"
-              id="video"
-              onclick="TogglePlayPause()"
-            >
-              <span class="material-icons icon-play">
-                play_circle_outline
-              </span>
-              <span class="material-icons icon-pause">
-                pause_circle_outline
-              </span>
+            <div class="video-group">
+              <button class="button">
+                <span class="play"></span>
+                <span class="small-box"></span>
+              </button>
             </div>
+           
           </div>
         </div>
       </section>
@@ -212,11 +211,15 @@
               started!
             </div>
             <div class="money-block__icons">
-              <a href="/"
+              <a href="/" class="icon"
                 ><img src="img/google-playstore.svg" alt="Google"
               /></a>
-              <a href="/"><img src="img/apple-appstore.svg" alt="Apple" /></a>
-              <a href="/"><img src="img/windows.svg" alt="Windows" /></a>
+              <a href="/" class="icon"
+                ><img src="img/apple-appstore.svg" alt="Apple"
+              /></a>
+              <a href="/" class="icon"
+                ><img src="img/windows.svg" alt="Windows"
+              /></a>
             </div>
           </div>
           <div class="money-block__video">
@@ -251,9 +254,11 @@
               />
             </div>
             <input class="form-data" type="tel" placeholder="Phone Number" />
-            <div class="form-select">
+            <div class="select-group">
               <select required class="select">
-                <option selected value=""></option>
+                <option class="select__services" selected value="">
+                  Select service
+                </option>
                 <option class="form-option" value="1">overview</option>
                 <option class="form-option" value="2">features</option>
                 <option class="form-option" value="3">technology</option>
@@ -262,7 +267,7 @@
                 </option>
                 <option class="form-option" value="3">Privecy</option>
               </select>
-              <label class="label">Select Service</label>
+              <span class="material-symbols-rounded"> expand_more </span>
             </div>
             <button class="btn _form" type="submit">Submit Now</button>
           </form>
@@ -277,8 +282,8 @@
             <div class="footer__title">Address</div>
             <div class="footer__value">
               <a href="/">
-                Pipang Ltd, Griva Digeni, <br> 81-83 Jacovides Tower, 1st Floor 1090
-                Picosia USA
+                Pipang Ltd, Griva Digeni, <br />
+                81-83 Jacovides Tower, 1st Floor 1090 Picosia USA
               </a>
             </div>
           </div>
@@ -319,7 +324,7 @@
 
           <div class="footer__support">
             <div class="footer__title">We Support</div>
-            <a href="/"><img src="img/bank.svg" alt="BankCards" /></a>
+            <img src="img/bank.svg" alt="BankCards" />
           </div>
         </div>
 
@@ -331,6 +336,7 @@
     <script>
       document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
